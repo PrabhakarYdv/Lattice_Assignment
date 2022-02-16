@@ -3,6 +3,7 @@ package com.prabhakar.lattice_assignment.view
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         /**
         Starting Animation before loading Content
          */
-//        loading.startShimmerAnimation()
+        loading.startShimmerAnimation()
 
 
         /**
@@ -45,15 +46,16 @@ class MainActivity : AppCompatActivity() {
                         Toast.makeText(this@MainActivity, "Error", Toast.LENGTH_SHORT).show()
                     }
                     Status.LOADING -> {
-//                        loading.visibility = View.VISIBLE
-//                        loading.startShimmerAnimation()
-//                        recyclerView.visibility = View.GONE
+                        loading.visibility = View.VISIBLE
+                        loading.startShimmerAnimation()
+                        recyclerView.visibility = View.GONE
 
                     }
 
                     Status.SUCCESS -> {
-//                        recyclerView.visibility = View.VISIBLE
-//                        loading.visibility = View.GONE
+                        searchLayout.visibility = View.VISIBLE
+                        recyclerView.visibility = View.VISIBLE
+                        loading.visibility = View.GONE
                         dataList = this.data as MutableList<ArticlesModel>
 //                        userAdapter.notifyDataSetChanged()
                         setRecyclerView()
