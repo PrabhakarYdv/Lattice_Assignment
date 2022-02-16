@@ -9,6 +9,10 @@ import com.prabhakar.lattice_assignment.repository.Repository
 import kotlinx.coroutines.Dispatchers
 
 class NewsViewModel : ViewModel() {
+    /**
+    Taking all News Data from repository
+     */
+
     private val repository = Repository()
     fun showData(): LiveData<Resource<List<ArticlesModel?>>> {
         return liveData(Dispatchers.Main) {
@@ -17,9 +21,11 @@ class NewsViewModel : ViewModel() {
         }
     }
 
+    /**
+    Taking filter News Data from repository
+     */
 
     fun searchData(query: String): LiveData<Resource<List<ArticlesModel?>>> {
-
         return liveData(Dispatchers.IO) {
             val data = repository.getSearchDataFromServer(query)
             emit(data)
