@@ -16,4 +16,13 @@ class NewsViewModel : ViewModel() {
             emit(data)
         }
     }
+
+
+    fun searchData(query: String): LiveData<Resource<List<ArticlesModel?>>> {
+
+        return liveData(Dispatchers.IO) {
+            val data = repository.getSearchDataFromServer(query)
+            emit(data)
+        }
+    }
 }

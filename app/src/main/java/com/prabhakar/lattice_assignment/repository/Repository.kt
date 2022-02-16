@@ -5,6 +5,7 @@ import com.prabhakar.lattice_assignment.remote.Resource
 import com.prabhakar.lattice_assignment.remote.ResponseHandler
 import com.prabhakar.lattice_assignment.remote.model.ArticlesModel
 import com.prabhakar.lattice_assignment.remote.model.ResponseModel
+import com.prabhakar.lattice_assignment.utill.Constraints
 
 class Repository {
     private val apiService = Network.provideAPIService()
@@ -23,7 +24,15 @@ class Repository {
         }
     }
 
-    suspend fun getSearchDataFromApi(query: String): ResponseModel {
-        return apiService.getSearchedData(query, "2723fe6d30b6429bb61446b7c0571a0e")
+    /**
+    Fetching keyword related data from server and passing to ViewModel
+     */
+    suspend fun getSearchDataFromServer(query: String): Resource<List<ArticlesModel?>> {
+        val searchData = apiService.getSearchedData(query, Constraints.API_KEY).articles
+        return try {
+            responseHandler.handleSuccess(searchData)
+        } catch (exception: Exception) {
+            responseHandler.handleException(exception)
+        }
     }
 }
