@@ -16,7 +16,7 @@ class NewsViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
             title.text = model.title
             desc.text = model.description
             channel.text = model.source?.name
-            timeAgo.text = "${getTimeAgo(model)} hours ago"
+            timeAgo.text = "${getTimeAgo(model)}"
         }
     }
 

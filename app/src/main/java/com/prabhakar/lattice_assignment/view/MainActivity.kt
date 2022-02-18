@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
                         recyclerView.visibility = View.VISIBLE
                         loading.visibility = View.GONE
                         dataList = this.data as MutableList<ArticlesModel>
-//                        userAdapter.notifyDataSetChanged()
+//                        newsAdapter.notifyDataSetChanged()
                         setRecyclerView()
                     }
                 }
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                                 Status.SUCCESS -> {
                                     dataList.clear()
                                     dataList = this.data as MutableList<ArticlesModel>
-                                    newsAdapter.notifyDataSetChanged()
+//                                    newsAdapter.notifyDataSetChanged()
                                 }
                             }
                         }
