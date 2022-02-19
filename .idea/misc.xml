@@ -4,7 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/drawable/search_icon.xml" value="0.2601851851851852" />
+        <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/layout/activity_details.xml" value="0.24818840579710144" />
+        <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/layout/activity_fullscreen.xml" value="0.24818840579710144" />
         <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/layout/activity_main.xml" value="0.259375" />
+        <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/layout/activity_splash_screen.xml" value="0.24818840579710144" />
         <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/layout/news_layout.xml" value="0.259375" />
         <entry key="..\:/Prabhakar/Full Stack Android Development/Assignments/Lattice Assignment/app/src/main/res/layout/shimmer_layout.xml" value="0.25226449275362317" />
       </map>

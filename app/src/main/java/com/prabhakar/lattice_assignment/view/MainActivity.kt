@@ -1,5 +1,6 @@
 package com.prabhakar.lattice_assignment.view
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -17,7 +18,7 @@ import com.prabhakar.lattice_assignment.view.adapter.NewsAdapter
 import com.prabhakar.lattice_assignment.viewmodel.NewsViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnClickListener {
     lateinit var viewModel: NewsViewModel
     lateinit var newsAdapter: NewsAdapter
     private var dataList = mutableListOf<ArticlesModel>()
@@ -72,7 +73,7 @@ class MainActivity : AppCompatActivity() {
     Setting RecyclerView
      */
     private fun setRecyclerView() {
-        newsAdapter = NewsAdapter(dataList)
+        newsAdapter = NewsAdapter(dataList, this)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = newsAdapter
     }
@@ -94,7 +95,7 @@ class MainActivity : AppCompatActivity() {
                                 Status.SUCCESS -> {
                                     dataList.clear()
                                     dataList = this.data as MutableList<ArticlesModel>
-//                                    newsAdapter.notifyDataSetChanged()
+                                    newsAdapter.notifyDataSetChanged()
                                 }
                             }
                         }
@@ -110,4 +111,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onClick(model: ArticlesModel, position: Int) {
+        val intent = Intent(this, DetailsActivity::class.java)
+        intent.putExtra("img",model.urlToImage)
+        intent.putExtra("title",model.title)
+        intent.putExtra("date",model.publishedAt)
+        intent.putExtra("author",model.author)
+        startActivity(intent)
+    }
 }

@@ -28,4 +28,4 @@ data class ArticlesModel(
 
     @field:SerializedName("content")
     val content: String? = null
-) : Serializable
+)

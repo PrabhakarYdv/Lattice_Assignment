@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.Lattice_Assignment.Fullscreen" parent="Theme.Lattice_Assignment">
+        <item name="android:actionBarStyle">
+            @style/Widget.Theme.Lattice_Assignment.ActionBar.Fullscreen
+        </item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+    </style>
+
 </resources>
