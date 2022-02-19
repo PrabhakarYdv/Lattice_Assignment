@@ -10,7 +10,7 @@
 * [Glide](https://github.com/bumptech/glide)
 * [Retrofit](https://square.github.io/retrofit/)
 * [Jetpack](https://developer.android.com/jetpack)
-* [Shimmer Animation]https://facebook.github.io/shimmer-android/()
+* [Shimmer Animation](https://facebook.github.io/shimmer-android/)
 * [Lottie Animation](https://lottiefiles.com/blog/working-with-lottie/getting-started-with-lottie-animations-in-android-app)
 
 # Things we used while making this application
