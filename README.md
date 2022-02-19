@@ -34,12 +34,12 @@
 
 <table>
   <tr>
-    <td>Home</td>
-    <td>Home</td>
+    <td>Welcome Screen</td>
+    <td>Home Screen</td>
   </tr>
   <tr>
-    <td><img src="Welcome" width="280" /></td>
-    <td><img src="Home" width="280"></td>
+    <td><img src="https://github.com/PrabhakarYdv/Lattice_Assignment/blob/master/images/welcome.gif" height="180" width="280" /></td>
+    <td><img src="https://github.com/PrabhakarYdv/Lattice_Assignment/blob/master/images/Home.gif" height="180" width="280"></td>
   </tr>
  </table>
  
