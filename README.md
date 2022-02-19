@@ -20,6 +20,7 @@
 * Recycler View
 * Retrofit Library
 * API
+* Animation
 
 # Clone this Repo To Your System Using Android Studio✨
 
