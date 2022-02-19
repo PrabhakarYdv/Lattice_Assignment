@@ -117,6 +117,8 @@ class MainActivity : AppCompatActivity(), OnClickListener {
         intent.putExtra("title",model.title)
         intent.putExtra("date",model.publishedAt)
         intent.putExtra("author",model.author)
+        intent.putExtra("content",model.content)
+        intent.putExtra("desc",model.description)
         startActivity(intent)
     }
 }
