@@ -1,6 +1,12 @@
 # Lattice_Assignment
 
+# Tech Stack ✨
+
+* [Android Studio](https://developer.android.com/studio)
+* [Kotlin](https://kotlinlang.org/)
+
 # 🔗Open-Source Library
+
 * [Glide](https://github.com/bumptech/glide)
 * [Retrofit](https://square.github.io/retrofit/)
 * [Jetpack](https://developer.android.com/jetpack)
@@ -13,10 +19,6 @@
 * Retrofit Library
 * API
 
-# Tech Stack ✨
-
-* [Android Studio](https://developer.android.com/studio)
-* [Kotlin](https://kotlinlang.org/)
 
 # Clone this Repo To Your System Using Android Studio✨
 
